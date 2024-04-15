@@ -1,3 +1,10 @@
+
+let nickName = prompt("Enter your usarname")
+let nickLast = prompt("Enter your Last name")
+let nickAge = prompt("Enter your Age")
+let nickAddress = prompt("Enter your Address")
+let nickEmail = prompt("Enter your Email")
+let nickCallNumber = prompt("Enter your CallNumber")
 var userName = "Herbin Esteban"
 var lastN = "Restrepo isaza"
 var age = "23"
@@ -19,6 +26,9 @@ console.log("Name = " + userName)
 console.log("Age = " + age)
 console.log("Last name  = " + lastN)
 console.log("Address = " + address)
+
+console.warn("Info = ",nickName,nickLast,nickAge,nickAddress,nickCallNumber,nickEmail)
+
 //con esto se le aplican estilos para personalizar el error ---
 console.log(`%c${age}`), ("background-color: #D9CEFF; border-radius: 50px; font-weight: bold; padding-top: 5px; padding-right: 8px; padding-bottom: 5px; padding-left: 8px;");
 
@@ -38,3 +48,12 @@ console.log("Address = " + address)
 console.log("Email=" + email)
 console.log("CallNumber=" + callNumber)
 console.groupEnd()
+
+listCodersGates=["lorenzo perex", "carlos slim", "pedro pascal"]
+
+console.table(listCodersGates)
+console.list(listCodersGates)
+
+
+
+

@@ -50,7 +50,7 @@ console.log("CallNumber=" + callNumber)
 console.groupEnd()
 
 listCodersGates=["lorenzo perex", "carlos slim", "pedro pascal"]
-
+//para imprimir el contenido de listas mediante tablas o lista en la consola
 console.table(listCodersGates)
 console.list(listCodersGates)
 

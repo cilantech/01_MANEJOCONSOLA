@@ -9,5 +9,19 @@ let callNumber = "2241646584"
 //const
 //var se usaba mucho antes ahora lo abandonamos,siempre usar: let si se puede alterar pero const no
 console.log(userName, age, lastN)
+console.error(lastN)
+console.warn(age)
+console.debug(address)
+console.info(address)
 console.log(name2)
-console.log(email,address,callNumber)
+console.log(email, address, callNumber)
+console.log("Name = " + userName)
+console.log("Age = " + age)
+console.log("Last name  = " + lastN)
+console.log("Address = " + address)
+//con esto se le aplican estilos para personalizar el error ---
+console.log(`%c${age}`),("background-color: #D9CEFF; border-radius: 50px; font-weight: bold; padding-top: 5px; padding-right: 8px; padding-bottom: 5px; padding-left: 8px;"); 
+
+console.log("Info = " + userName +""+ lastN + age +""+ email +""+address+""+callNumber)
+console.warn("Info = " ,userName , lastN, age, email, address, callNumber)
+console.error(`Info: ${userName} ${lastN} ${age} ${email}${address} ${callNumber}`)

@@ -20,8 +20,21 @@ console.log("Age = " + age)
 console.log("Last name  = " + lastN)
 console.log("Address = " + address)
 //con esto se le aplican estilos para personalizar el error ---
-console.log(`%c${age}`),("background-color: #D9CEFF; border-radius: 50px; font-weight: bold; padding-top: 5px; padding-right: 8px; padding-bottom: 5px; padding-left: 8px;"); 
+console.log(`%c${age}`), ("background-color: #D9CEFF; border-radius: 50px; font-weight: bold; padding-top: 5px; padding-right: 8px; padding-bottom: 5px; padding-left: 8px;");
 
-console.log("Info = " + userName +""+ lastN + age +""+ email +""+address+""+callNumber)
-console.warn("Info = " ,userName , lastN, age, email, address, callNumber)
+console.log("Info = " + userName + "" + lastN + "Age = " + age + "" + +"email=" + email + "" + +"address=" + address + "" + callNumber)
+console.warn("Info = ", userName, lastN, "Age = ", age, email, address, callNumber)
 console.error(`Info: ${userName} ${lastN} ${age} ${email}${address} ${callNumber}`)
+
+console.group("basic information")//para agrupar distintas consolas en un item 
+console.log("Name = " + userName)
+console.log("Age = " + age)
+console.log("Last name  = " + lastN)
+console.groupEnd()
+
+
+console.group("contact information")
+console.log("Address = " + address)
+console.log("Email=" + email)
+console.log("CallNumber=" + callNumber)
+console.groupEnd()
